@@ -10,15 +10,16 @@ module.exports = grammar({
     source_file: $ => repeat($._declaration),
 
     _declaration: $ => seq(choice(
-      $.decl,
+      $.con_decl,
       $.defn,
       $.solve_decl,
       $.mode_decl,
       $.worlds_decl,
       $.total_decl,
+      $.freeze_decl,
     ), '.'),
 
-    decl: $ => seq(
+    con_decl: $ => seq(
       choice(alias('_', $.anon), $.id),
       ':',
       $._term),
@@ -28,7 +29,13 @@ module.exports = grammar({
       optional(seq(':', $._term)), '=', $._term
     ),
 
+    _solve_defn: $ => seq(
+      '%define',
+      $.defn,
+    ),
+
     solve_decl: $ => seq(
+      repeat($._solve_defn),
       '%solve',
       choice(alias('_', $.anon), $.id),
       ':',
@@ -102,6 +109,11 @@ module.exports = grammar({
       optional(seq($.id, repeat(seq('|', $.id)))),
       ')',
       repeat(seq('(', $.callpat, ')')),
+    ),
+
+    freeze_decl: $ => seq(
+      '%freeze',
+      repeat($.id),
     ),
 
     comment: $ => token(choice(

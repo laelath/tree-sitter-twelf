@@ -19,7 +19,7 @@
     }
   },
   {
-    "type": "decl",
+    "type": "con_decl",
     "named": true,
     "fields": {},
     "children": {
@@ -111,6 +111,21 @@
         },
         {
           "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "freeze_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "id",
           "named": true
         }
       ]
@@ -227,6 +242,10 @@
           "named": true
         },
         {
+          "type": "defn",
+          "named": true
+        },
+        {
           "type": "id",
           "named": true
         },
@@ -274,11 +293,15 @@
       "required": false,
       "types": [
         {
-          "type": "decl",
+          "type": "con_decl",
           "named": true
         },
         {
           "type": "defn",
+          "named": true
+        },
+        {
+          "type": "freeze_decl",
           "named": true
         },
         {
@@ -662,6 +685,14 @@
         }
       ]
     }
+  },
+  {
+    "type": "%define",
+    "named": false
+  },
+  {
+    "type": "%freeze",
+    "named": false
   },
   {
     "type": "%mode",

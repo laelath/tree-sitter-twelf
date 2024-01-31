@@ -16,7 +16,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "decl"
+              "name": "con_decl"
             },
             {
               "type": "SYMBOL",
@@ -37,6 +37,10 @@
             {
               "type": "SYMBOL",
               "name": "total_decl"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "freeze_decl"
             }
           ]
         },
@@ -46,7 +50,7 @@
         }
       ]
     },
-    "decl": {
+    "con_decl": {
       "type": "SEQ",
       "members": [
         {
@@ -115,9 +119,29 @@
         }
       ]
     },
+    "_solve_defn": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "%define"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "defn"
+        }
+      ]
+    },
     "solve_decl": {
       "type": "SEQ",
       "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_solve_defn"
+          }
+        },
         {
           "type": "STRING",
           "value": "%solve"
@@ -728,6 +752,22 @@
                 "value": ")"
               }
             ]
+          }
+        }
+      ]
+    },
+    "freeze_decl": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "%freeze"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "id"
           }
         }
       ]

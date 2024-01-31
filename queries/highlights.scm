@@ -9,13 +9,19 @@
 (tm_lam ["[" "]"] @constructor)
 
 [
+  "%define"
   "%solve"
   "%mode"
   "%worlds"
   "%total"
+  "%freeze"
 ] @keyword
 
-"." @punctuation.delimiter
+[
+  "."
+  "|"
+] @punctuation.delimiter
+
 [
   "("
   ")"
@@ -30,7 +36,6 @@
   "<-"
   ":"
   "="
-  "|"
 ] @operator
 
 (comment) @comment.line
