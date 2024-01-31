@@ -1,0 +1,762 @@
+[
+  {
+    "type": "callpat",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "anon",
+          "named": true
+        },
+        {
+          "type": "id",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "anon",
+          "named": true
+        },
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "defn",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mid",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "mode",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mode",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "mode_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "mid",
+          "named": true
+        },
+        {
+          "type": "mode",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "order",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "order",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "solve_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "anon",
+          "named": true
+        },
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "decl",
+          "named": true
+        },
+        {
+          "type": "defn",
+          "named": true
+        },
+        {
+          "type": "mode_decl",
+          "named": true
+        },
+        {
+          "type": "solve_decl",
+          "named": true
+        },
+        {
+          "type": "total_decl",
+          "named": true
+        },
+        {
+          "type": "worlds_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tm_app",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tm_ascrip",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tm_bracket",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tm_fun",
+    "named": true,
+    "fields": {
+      "from": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "id",
+            "named": true
+          },
+          {
+            "type": "tm_app",
+            "named": true
+          },
+          {
+            "type": "tm_ascrip",
+            "named": true
+          },
+          {
+            "type": "tm_bracket",
+            "named": true
+          },
+          {
+            "type": "tm_fun",
+            "named": true
+          },
+          {
+            "type": "tm_hole",
+            "named": true
+          },
+          {
+            "type": "tm_lam",
+            "named": true
+          },
+          {
+            "type": "tm_pi",
+            "named": true
+          },
+          {
+            "type": "tm_type",
+            "named": true
+          }
+        ]
+      },
+      "to": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "id",
+            "named": true
+          },
+          {
+            "type": "tm_app",
+            "named": true
+          },
+          {
+            "type": "tm_ascrip",
+            "named": true
+          },
+          {
+            "type": "tm_bracket",
+            "named": true
+          },
+          {
+            "type": "tm_fun",
+            "named": true
+          },
+          {
+            "type": "tm_hole",
+            "named": true
+          },
+          {
+            "type": "tm_lam",
+            "named": true
+          },
+          {
+            "type": "tm_pi",
+            "named": true
+          },
+          {
+            "type": "tm_type",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "tm_lam",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tm_pi",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "total_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "callpat",
+          "named": true
+        },
+        {
+          "type": "order",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "worlds_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "callpat",
+          "named": true
+        },
+        {
+          "type": "id",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "%mode",
+    "named": false
+  },
+  {
+    "type": "%solve",
+    "named": false
+  },
+  {
+    "type": "%total",
+    "named": false
+  },
+  {
+    "type": "%worlds",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "->",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "<-",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "anon",
+    "named": true
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "id",
+    "named": true
+  },
+  {
+    "type": "tm_hole",
+    "named": true
+  },
+  {
+    "type": "tm_type",
+    "named": true
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
