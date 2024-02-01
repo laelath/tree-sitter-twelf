@@ -772,7 +772,11 @@
         }
       ]
     },
-    "comment": {
+    "id": {
+      "type": "PATTERN",
+      "value": "[^\\s:.()\\[\\]{}%\"]+"
+    },
+    "line_comment": {
       "type": "TOKEN",
       "content": {
         "type": "CHOICE",
@@ -796,10 +800,6 @@
           }
         ]
       }
-    },
-    "id": {
-      "type": "PATTERN",
-      "value": "[^\\s:.()\\[\\]{}%\"]+"
     }
   },
   "extras": [
@@ -808,21 +808,22 @@
       "value": "\\s"
     },
     {
-      "type": "STRING",
-      "value": "\n"
-    },
-    {
-      "type": "STRING",
-      "value": "\r"
+      "type": "SYMBOL",
+      "name": "line_comment"
     },
     {
       "type": "SYMBOL",
-      "name": "comment"
+      "name": "block_comment"
     }
   ],
   "conflicts": [],
   "precedences": [],
-  "externals": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "block_comment"
+    }
+  ],
   "inline": [],
   "supertypes": []
 }

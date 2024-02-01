@@ -763,11 +763,15 @@
     "named": true
   },
   {
-    "type": "comment",
+    "type": "block_comment",
     "named": true
   },
   {
     "type": "id",
+    "named": true
+  },
+  {
+    "type": "line_comment",
     "named": true
   },
   {

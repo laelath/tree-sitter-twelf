@@ -38,4 +38,5 @@
   "="
 ] @operator
 
-(comment) @comment.line
+(line_comment) @comment.line
+(block_comment) @comment.block

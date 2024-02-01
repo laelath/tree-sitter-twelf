@@ -2,8 +2,13 @@ module.exports = grammar({
   name: 'twelf',
 
   extras: $ => [
-    /\s/, '\n', '\r',
-    $.comment
+    /\s/,
+    $.line_comment,
+    $.block_comment,
+  ],
+
+  externals: $ => [
+    $.block_comment,
   ],
 
   rules: {
@@ -116,11 +121,12 @@ module.exports = grammar({
       repeat($.id),
     ),
 
-    comment: $ => token(choice(
+    id: $ => /[^\s:.()\[\]{}%"]+/,
+
+    line_comment: $ => token(choice(
       /%\n/,
       seq(/%[% \t]/, /.*/)
     )),
 
-    id: $ => /[^\s:.()\[\]{}%"]+/,
   }
 });
