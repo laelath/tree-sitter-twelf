@@ -15,6 +15,7 @@
   "%worlds"
   "%total"
   "%freeze"
+  "%name"
 ] @keyword
 
 [

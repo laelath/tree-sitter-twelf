@@ -211,6 +211,21 @@
     }
   },
   {
+    "type": "name_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "id",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "order",
     "named": true,
     "fields": {},
@@ -306,6 +321,10 @@
         },
         {
           "type": "mode_decl",
+          "named": true
+        },
+        {
+          "type": "name_decl",
           "named": true
         },
         {
@@ -696,6 +715,10 @@
   },
   {
     "type": "%mode",
+    "named": false
+  },
+  {
+    "type": "%name",
     "named": false
   },
   {

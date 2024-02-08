@@ -24,6 +24,10 @@
             },
             {
               "type": "SYMBOL",
+              "name": "name_decl"
+            },
+            {
+              "type": "SYMBOL",
               "name": "solve_decl"
             },
             {
@@ -116,6 +120,35 @@
         {
           "type": "SYMBOL",
           "name": "_term"
+        }
+      ]
+    },
+    "name_decl": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "%name"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "id"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "id"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "id"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         }
       ]
     },

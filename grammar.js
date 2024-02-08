@@ -17,6 +17,7 @@ module.exports = grammar({
     _declaration: $ => seq(choice(
       $.con_decl,
       $.defn,
+      $.name_decl,
       $.solve_decl,
       $.mode_decl,
       $.worlds_decl,
@@ -32,6 +33,13 @@ module.exports = grammar({
     defn: $ => seq(
       $.id,
       optional(seq(':', $._term)), '=', $._term
+    ),
+
+    name_decl: $ => seq(
+      '%name',
+      $.id,
+      $.id,
+      optional($.id)
     ),
 
     _solve_defn: $ => seq(
