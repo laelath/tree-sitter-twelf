@@ -1,5 +1,28 @@
 [
   {
+    "type": "block_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dec",
+          "named": true
+        },
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "callpat",
     "named": true,
     "fields": {},
@@ -30,6 +53,53 @@
           "type": "anon",
           "named": true
         },
+        {
+          "type": "id",
+          "named": true
+        },
+        {
+          "type": "tm_app",
+          "named": true
+        },
+        {
+          "type": "tm_ascrip",
+          "named": true
+        },
+        {
+          "type": "tm_bracket",
+          "named": true
+        },
+        {
+          "type": "tm_fun",
+          "named": true
+        },
+        {
+          "type": "tm_hole",
+          "named": true
+        },
+        {
+          "type": "tm_lam",
+          "named": true
+        },
+        {
+          "type": "tm_pi",
+          "named": true
+        },
+        {
+          "type": "tm_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
         {
           "type": "id",
           "named": true
@@ -307,6 +377,10 @@
       "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "block_decl",
+          "named": true
+        },
         {
           "type": "con_decl",
           "named": true
@@ -706,6 +780,14 @@
     }
   },
   {
+    "type": "%abbrev",
+    "named": false
+  },
+  {
+    "type": "%block",
+    "named": false
+  },
+  {
     "type": "%define",
     "named": false
   },
@@ -791,6 +873,10 @@
   },
   {
     "type": "id",
+    "named": true
+  },
+  {
+    "type": "keyword",
     "named": true
   },
   {

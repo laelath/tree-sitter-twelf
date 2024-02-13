@@ -9,14 +9,18 @@
 (tm_lam ["[" "]"] @constructor)
 
 [
+  "%abbrev"
   "%define"
   "%solve"
   "%mode"
+  "%block"
   "%worlds"
   "%total"
   "%freeze"
   "%name"
 ] @keyword
+
+(keyword) @keyword
 
 [
   "."

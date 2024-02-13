@@ -20,6 +20,7 @@ module.exports = grammar({
       $.name_decl,
       $.solve_decl,
       $.mode_decl,
+      $.block_decl,
       $.worlds_decl,
       $.total_decl,
       $.freeze_decl,
@@ -31,6 +32,7 @@ module.exports = grammar({
       $._term),
 
     defn: $ => seq(
+      optional('%abbrev'),
       $.id,
       optional(seq(':', $._term)), '=', $._term
     ),
@@ -114,6 +116,17 @@ module.exports = grammar({
       '%total',
       $.order,
       repeat(seq('(', $.callpat, ')')),
+    ),
+
+    dec: $ => seq('{', $.id, optional(seq(':', $._term)), '}'),
+
+    _bdecl: $ => seq(
+      optional(seq(alias('some', $.keyword), repeat($.dec))),
+      alias('block', $.keyword), repeat($.dec),
+    ),
+
+    block_decl: $ => seq(
+      '%block', $.id, ':', $._bdecl,
     ),
 
     worlds_decl: $ => seq(
